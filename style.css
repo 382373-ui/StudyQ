@@ -1,0 +1,147 @@
+/* StudyQ v1.5.0 - Master Technical Specification Styles */
+:root {
+    --primary: #1a237e;       /* Deep Navy */
+    --accent: #00c853;        /* Success/Rebate Green */
+    --bg-floor: #f8fafc;      /* Clean Slate */
+    --border-soft: #e2e8f0;
+    --text-main: #1e293b;
+    --shadow-pro: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-floor);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-main);
+}
+
+/* Updated Container: Shared by Login, Reg, and Profile */
+.container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-pro);
+    width: 100%;
+    max-width: 440px; /* Base size */
+    transition: transform 0.2s ease;
+}
+
+/* Heading with Market Validation accent */
+h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    border-left: 4px solid var(--primary);
+    padding-left: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 0.8rem 1rem;
+    border: 1.5px solid var(--border-soft);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.1);
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: filter 0.2s, transform 0.1s;
+    margin-top: 0.5rem;
+}
+
+button:hover { filter: brightness(1.2); }
+button:active { transform: scale(0.98); }
+
+a {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-align: center;
+    display: block;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+a:hover { color: var(--primary); }
+
+.error {
+    background: #fff1f2;
+    color: #be123c;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: 1px solid #fecdd3;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+/* --- Section 4 & 5: Profile & Trading Floor Specifics --- */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.avatar-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--bg-floor);
+    border: 2px solid var(--primary);
+    object-fit: cover;
+}
+
+.balance-badge {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-soft);
+    padding-top: 1rem;
+}
