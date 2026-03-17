@@ -50,9 +50,10 @@ try {
     <title>StudyQ | Profile Command</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-   
+    <?php include 'header.php'; ?>
 </head>
 <body>
+    
 
 <div class="container">
     <div class="profile-header">
@@ -79,8 +80,7 @@ try {
     </form>
 
     <div class="nav-links">
-        <a href="index.php" style="margin: 0;">← Back to Floor</a>
-        <a href="logout.php" style="margin: 0; color: #be123c;">Terminate Session</a>
+        <a href="index.php" style="margin: 0;">← Back to Home</a>
     </div>
 </div>
 

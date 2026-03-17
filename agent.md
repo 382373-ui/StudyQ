@@ -57,3 +57,13 @@ Level 1 (Snippets): // |StudyQ|1|
 Level 2 (Functions): // *StudyQ*2*
 
 Level 3 (Direct Fix): // ##StudyQ##3##
+6. Extra Modules (Asset Persistence)
+Notes/Save: Add a bookmarks table.
+
+INSERT INTO bookmarks (user_id, prompt_id, content).
+
+Highlighting: The System Prompt now mandates **bolding** for keywords to ensure the UI can render them clearly.
+
+Theming: * Standard: Clean White/Blue.
+
+Advanced (Dark): Cyber-trading aesthetic (Neon greens/Golds) to match the "Market" theme.
